@@ -61,14 +61,21 @@
       /* Match text color with background color */
       background-color: rgba(51, 51, 51, 0.75);
       /* Dark header/footer background color with transparency */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .header {
       top: 0;
+      border-radius: 0 0 15px 15px;
+      /* Add border radius */
     }
 
     .footer {
       bottom: 0;
+      border-radius: 15px 15px 0 0;
+      /* Add border radius */
     }
 
     .container {
@@ -108,6 +115,11 @@
       margin-bottom: 2rem;
       /* Adjusted margin between buttons */
     }
+
+    .header-icon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
   </style>
 </head>
 
@@ -119,7 +131,10 @@
 
 
       <div class="header text-center">
-        <h3>BMD Camp : Halla Boll Team</h3>
+        <div class="header-content row">
+          <div class="col-sm-2"><span class="header-icon"><img style="width: 70px;height: 70px;" src="./img/icon.png"></img></span></div>
+          <div class="col-sm-10"><h3  >BMD Camp : Halla Boll Team</h3></div>
+        </div>
       </div>
 
       <div class="container">
@@ -134,10 +149,16 @@
       </div>
 
       <div class="footer text-center">
-        <h3>Halla Boll Team</h3>
         <p>&copy; 2024 Halla Boll Team. All rights reserved.</p>
       </div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
